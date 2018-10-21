@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Commit 
  git remote add origin https://github.com/dhiraj20/shoppingApp.git
- it push -u origin master
+ git push -u origin master
