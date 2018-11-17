@@ -15,7 +15,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-   // this.router.navigate(['']);  //redirect other pages to homepage on browser refresh    
+   // this.router.navigate(['']);  //redirect other pages to homepage on browser refresh
   }
 
   ngAfterViewInit() {

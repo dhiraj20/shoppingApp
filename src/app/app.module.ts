@@ -13,12 +13,25 @@ import { AppInterceptor } from './theme/utils/app-interceptor.service';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 import { SidenavMenuComponent } from './theme/components/sidenav-menu/sidenav-menu.component';
+import { CategoryListComponent } from './theme/components/category-list/category-list.component';
+import { AppService } from './app.service';
+import { TopMenuComponent } from './theme/components/top-menu/top-menu.component';
+import { BreadcrumbComponent } from './theme/components/breadcrumb/breadcrumb.component';
+import { MenuComponent } from './theme/components/menu/menu.component';
+import { OptionsComponent } from './theme/components/options/options.component';
+import { FooterComponent } from './theme/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagesComponent,
-    SidenavMenuComponent
+    SidenavMenuComponent,
+    CategoryListComponent,
+    TopMenuComponent,
+    BreadcrumbComponent,
+    MenuComponent,
+    OptionsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +43,7 @@ import { SidenavMenuComponent } from './theme/components/sidenav-menu/sidenav-me
   ],
   providers: [
     AppSettings,
+    AppService,
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
