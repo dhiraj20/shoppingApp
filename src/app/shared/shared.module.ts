@@ -111,9 +111,9 @@ import { MatAutocompleteModule,
   ],
   declarations: [
   ],
-  entryComponents:[
+  entryComponents: [
   ],
-  providers:[
+  providers: [
   ]
 })
 export class SharedModule { }
